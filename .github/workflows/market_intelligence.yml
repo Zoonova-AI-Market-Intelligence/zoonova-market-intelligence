@@ -1,4 +1,12 @@
 name: Zoonova 3x Daily Market Intelligence
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 on:
   schedule:
@@ -19,8 +27,7 @@ on:
           - midday
           - post_close
 
-permissions:
-  contents: write
+
 
 jobs:
   run-publisher:
@@ -69,6 +76,19 @@ jobs:
 
           sys.exit(ret >> 8)
           EOF
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+     
       - name: Commit and Push Generated Reports
         run: |
           git config --global user.name "Zoonova Engine Bot"
