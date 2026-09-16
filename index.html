@@ -3,7 +3,6 @@
 <head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-
 <title>Zoonova Market Intelligence</title>
 <script type='application/ld+json'>
 {
@@ -310,7 +309,7 @@ main.container > p:last-child {
 <h1><svg class='title-icon' aria-hidden='true'><use href='#icon-world'/></svg>Zoonova AI: Closing Bell Report</h1><p class='report-meta'>
 	<strong>Date:</strong> Wednesday, September 16, 2026<br>
 	<strong>Execution Timestamp:</strong> 5:00 PM ET<br>
-	<strong>Engine Version:</strong> Quad-Ensemble (TFT · CAT · RFR · XGB) + Gemini Flash
+	<strong>Engine Version:</strong> Quad-Ensemble (TFT · XGB · CAT · RFR) + Gemini Flash
 </p><div class='executive-summary'><p>
 <strong>Session Quantitative Briefing:</strong> The Zoonova AI Intelligence Engine executes a hybrid architecture combining a proprietary Quad-Ensemble machine learning framework with Google Gemini Flash for real-time contextual synthesis and semantic macroeconomic grounding. The quantitative pipeline integrates four specialized estimators: 
 <strong>Random Forest Regressor (RFR)</strong> for baseline structural stability, 
@@ -318,77 +317,130 @@ main.container > p:last-child {
 <strong>Categorical Boosting (CAT)</strong> for high-cardinality categorical signal processing, and 
 <strong>Temporal Fusion Transformer (TFT)</strong> for multi-horizon price and volatility forecasting.
 </p></div>
-<h2>1. QUANTITATIVE MODEL OVERVIEW &amp; SIGNAL METRICS</h2>
-<p>Zoonova's predictive framework applies a multi-layered analytical pipeline to evaluate asset trajectories, cross-asset momentum, and market breadth:</p>
+<h3>1. QUANTITATIVE MODEL OVERVIEW &amp; SIGNAL METRICS</h3>
+<p>The quantitative intelligence engine integrates multi-horizon forecasting architectures to evaluate systemic risk, alpha generation, and market regime shifts. Core predictive models include:</p>
 <ul>
-<li><strong>Quad-Ensemble Machine Learning Architecture</strong>: Price target projections and alpha generation probabilities are modeled using an ensemble consisting of Random Forest Regressor (RFR), eXtreme Gradient Boosting (XGB), Categorical Boosting (CAT), and Temporal Fusion Transformer (TFT).</li>
-<li><strong>VADER Sentiment Engine</strong>: Natural language processing scores institutional commentary, retail positioning, and real-time news flow into normalized directional sentiment bounds (-1.00 to +1.00).</li>
-<li><strong>BIRCH Clustering System</strong>: Balanced Iterative Reducing and Clustering using Hierarchies (BIRCH) aggregates multi-dimensional anomaly detection, systemic regime shifts, and structural dispersion across equity sectors.</li>
+<li>Predictive Forecasting: Zoonova's Quad-Ensemble framework combines Random Forest Regressor (RFR), eXtreme Gradient Boosting (XGB), Categorical Boosting (CAT), and Temporal Fusion Transformer (TFT) to project nominal price targets and calculate probability of excess alpha across 1-day to 1-year horizons (Zoonova, 2026-09-15).</li>
+<li>Sentiment Modeling: Valence Aware Dictionary and sEntiment Reasoner (VADER) natural language scoring quantifies newsflow and narrative tone within a normalized -1.00 to +1.00 index range (Zoonova, 2026-09-15).</li>
+<li>Anomaly &amp; Clustering Detection: Balanced Iterative Reducing and Clustering using Hierarchies (BIRCH) algorithm maps multi-dimensional price-volume deviations, short-term momentum shocks, and macro dispersion (Zoonova, 2026-09-15).</li>
 </ul>
-<h3>Macro Benchmark Signal Summary</h3>
+<p><strong>Benchmark Multi-Horizon Signal Matrix</strong></p>
 <table>
 <thead>
 <tr>
-<th>Asset / Benchmark</th>
+<th>Asset</th>
 <th>Ticker</th>
 <th>Previous Close ($)</th>
+<th>1-Mo Alpha Prob (&gt;+3%)</th>
 <th>1-Yr Target ($)</th>
-<th>Implied 1-Yr Trend</th>
+<th>1-Yr Implied Alpha</th>
 <th>VADER Sentiment</th>
-<th>ML Volatility Score</th>
+<th>Short-Term Alpha Rank</th>
+<th>Long-Term Alpha Rank</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>SPDR S&amp;P 500 ETF Trust</td>
+<td>SPDR S&amp;P 500 ETF</td>
 <td>SPY</td>
 <td>757.39</td>
+<td>0.00%</td>
 <td>865.55</td>
-<td>+14.8%</td>
-<td>-0.87 (Bearish)</td>
-<td>0.7180</td>
+<td>0.00%</td>
+<td>-0.87</td>
+<td>LOW</td>
+<td>LOW</td>
 </tr>
 <tr>
 <td>Invesco QQQ Trust</td>
 <td>QQQ</td>
 <td>704.54</td>
+<td>2.48%</td>
 <td>800.56</td>
-<td>+13.7%</td>
-<td>+0.28 (Mild Bullish)</td>
-<td>0.7180</td>
+<td>-0.95%</td>
+<td>+0.28</td>
+<td>LOW</td>
+<td>LOW</td>
 </tr>
 <tr>
-<td>SPDR Dow Jones Industrial Average ETF</td>
+<td>SPDR Dow Jones Industrial ETF</td>
 <td>DIA</td>
 <td>521.23</td>
+<td>2.19%</td>
 <td>569.19</td>
-<td>+10.5%</td>
-<td>0.00 (Neutral)</td>
-<td>0.7180</td>
+<td>-5.43%</td>
+<td>0.00</td>
+<td>LOW</td>
+<td>LOW</td>
 </tr>
 <tr>
 <td>Vanguard Total Bond Market ETF</td>
 <td>BND</td>
 <td>71.15</td>
+<td>2.48%</td>
 <td>79.31</td>
-<td>+11.5%</td>
-<td>-0.23 (Mild Bearish)</td>
-<td>0.8534</td>
+<td>-1.59%</td>
+<td>-0.23</td>
+<td>LOW</td>
+<td>LOW</td>
 </tr>
 <tr>
 <td>SPDR Gold Shares ETF</td>
 <td>GLD</td>
 <td>394.15</td>
+<td>26.51%</td>
 <td>437.06</td>
-<td>+11.6%</td>
-<td>-0.20 (Mild Bearish)</td>
-<td>0.7180</td>
+<td>-3.78%</td>
+<td>-0.20</td>
+<td>LOW</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>Apple Inc.</td>
+<td>AAPL</td>
+<td>331.34</td>
+<td>20.02%</td>
+<td>361.63</td>
+<td>-5.13%</td>
+<td>+0.78</td>
+<td>LOW</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>Amazon.com Inc.</td>
+<td>AMZN</td>
+<td>248.42</td>
+<td>20.02%</td>
+<td>273.30</td>
+<td>-4.67%</td>
+<td>+0.84</td>
+<td>LOW</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>Alphabet Inc.</td>
+<td>GOOGL</td>
+<td>344.98</td>
+<td>23.96%</td>
+<td>375.79</td>
+<td>-5.35%</td>
+<td>0.00</td>
+<td>LOW</td>
+<td>LOW</td>
 </tr>
 </tbody>
 </table>
-<p>The macro regime reflects near-term caution with benchmark equity sentiment diverging between tech-heavy indices and broad market baskets (Zoonova, 2026-09-15). SPY sentiment sits heavily depressed at -87% amid monetary tightening concerns, while 12-month Quad-Ensemble projections indicate underlying structural expansion across core equity indices (Zoonova, 2026-09-15).</p>
-<h2>2. SENTIMENT INSIGHTS &ndash; TOP 5 HIGH &amp; LOW</h2>
-<h3>Top 5 High Sentiment Stocks</h3>
+<p>(Zoonova, 2026-09-15)</p>
+<p>Time-series momentum trajectories indicate index-level consolidation following recent highs:</p>
+<ul>
+<li>SPY closed at $754.00 on 2026-09-16, with 12-month TFT-projected targets reaching $865.60 (+14.8% nominal expansion) by 2027-09-08 (Zoonova, 2026-09-16).</li>
+<li>QQQ pulled back to $704.10 on 2026-09-16, projected to advance toward $800.60 (+13.7% nominal expansion) over the 1-year horizon (Zoonova, 2026-09-16).</li>
+<li>DIA settled at $515.20 on 2026-09-16, with long-term projections pointing to $569.20 (+10.5% nominal expansion) (Zoonova, 2026-09-16).</li>
+<li>BND stands at $71.12 on 2026-09-16, projecting moderate yield recovery toward $79.31 (+11.5% nominal gain) by September 2027 (Zoonova, 2026-09-16).</li>
+<li>GLD retraced to $391.80 on 2026-09-16 from August peaks above $421.00, targeting $437.10 (+11.6% nominal gain) over the forecast cycle (Zoonova, 2026-09-16).</li>
+</ul>
+<h3>2. SENTIMENT INSIGHTS &ndash; TOP 5 HIGH &amp; LOW</h3>
+<p><strong>Top 5 High Sentiment Stocks</strong></p>
 <table>
 <thead>
 <tr>
@@ -403,35 +455,36 @@ main.container > p:last-child {
 <td>DKNG</td>
 <td>DraftKings Inc.</td>
 <td>+98.0%</td>
-<td>NFL season kickoff, prediction market expansion, and upgraded cash flow targets (Seeking Alpha, 2026-09-11; Simply Wall St, 2026-09-12).</td>
+<td>NFL season kickoff handle surge, prediction market expansion, and multiple Wall Street target upgrades (<a href="https://www.timothysykes.com">Timothy Sykes</a>, 2026-09-11; <a href="https://www.zacks.com">Zacks</a>, 2026-09-14).</td>
 </tr>
 <tr>
 <td>SMSI</td>
 <td>Smith Micro Software, Inc.</td>
 <td>+98.0%</td>
-<td>Carrier deployment expansions and product cost-optimization initiatives (Zacks, 2026-09-08).</td>
+<td>Expansion of mobile family safety carrier deployments and software product integrations (Zoonova, 2026-09-15; <a href="https://www.marketbeat.com">MarketBeat</a>, 2026-09-16).</td>
 </tr>
 <tr>
 <td>TMO</td>
 <td>Thermo Fisher Scientific Inc.</td>
 <td>+96.0%</td>
-<td>Resilient bioproduction demand and specialized life-sciences capital deployment (Zacks, 2026-09-15).</td>
+<td>Resilient bioprocessing equipment demand and multi-year life sciences procurement stability (Zoonova, 2026-09-15).</td>
 </tr>
 <tr>
 <td>EQT</td>
-<td>EQT Corp</td>
+<td>EQT Corp.</td>
 <td>+96.0%</td>
-<td>Natural gas infrastructure integration and export pricing strength (Zacks, 2026-09-15).</td>
+<td>Long-term European LNG export supply contracts and structural liquefied gas demand tailwinds (<a href="https://www.perplexity.ai">Perplexity</a>, 2026-09-15).</td>
 </tr>
 <tr>
 <td>APA</td>
 <td>APA Corporation</td>
 <td>+96.0%</td>
-<td>Energy production upside and ongoing operational discipline in international plays (Zacks, 2026-09-15).</td>
+<td>Upstream capital discipline, aggressive debt retirement, and offshore Suriname GranMorgu project milestones (<a href="https://simplywall.st">Simply Wall St</a>, 2026-09-13).</td>
 </tr>
 </tbody>
 </table>
-<h3>Top 5 Low Sentiment Stocks</h3>
+<p>(Zoonova, 2026-09-15)</p>
+<p><strong>Top 5 Low Sentiment Stocks</strong></p>
 <table>
 <thead>
 <tr>
@@ -444,38 +497,39 @@ main.container > p:last-child {
 <tbody>
 <tr>
 <td>DLTR</td>
-<td>Dollar Tree Inc</td>
+<td>Dollar Tree Inc.</td>
 <td>-98.0%</td>
-<td>Margin compression, soft lower-income consumer spending, and subdued Q3 guide (MarketBeat, 2026-09-14; Investing.com, 2026-08-27).</td>
+<td>Operating margin compression from tariff refund reinvestments and cautious near-term EPS guidance (<a href="https://www.businesswire.com">Business Wire</a>, 2026-08-27; <a href="https://www.marketbeat.com">MarketBeat</a>, 2026-09-11).</td>
 </tr>
 <tr>
 <td>IVV</td>
 <td>iShares Core S&amp;P 500 ETF</td>
 <td>-90.0%</td>
-<td>Broad market macro hedging ahead of the Federal Reserve policy decision (Schwab Network, 2026-09-15).</td>
+<td>Broad equity market retrenchment following the Federal Reserve's policy rate increase (<a href="https://www.conference-board.org">The Conference Board</a>, 2026-09-16).</td>
 </tr>
 <tr>
 <td>REGN</td>
 <td>Regeneron Pharmaceuticals, Inc.</td>
 <td>-89.0%</td>
-<td>Elevated legal and competitive patent pressure in core therapeutic franchises (Trading Economics, 2026-09-15).</td>
+<td>Securities class action filing deadlines stemming from the Phase 3 Fianlimab-Libtayo clinical trial failure (<a href="https://www.prnewswire.com">PR Newswire</a>, 2026-09-10; <a href="https://simplywall.st">Simply Wall St</a>, 2026-09-15).</td>
 </tr>
 <tr>
 <td>SPY</td>
 <td>SPDR S&amp;P 500 ETF Trust</td>
 <td>-87.0%</td>
-<td>Heavy portfolio put hedging and rate-sensitivity concerns across large caps (Business Insider, 2026-09-16).</td>
+<td>Hawkish Fed guidance, elevated Treasury yields, and broad equity valuation compression (Zoonova, 2026-09-15; <a href="https://www.fool.com">The Motley Fool</a>, 2026-09-16).</td>
 </tr>
 <tr>
 <td>PFF</td>
-<td>iShares Preferred &amp; Income Securities ETF</td>
+<td>iShares Preferred and Income Securities ETF</td>
 <td>-85.0%</td>
-<td>Fixed-income duration vulnerability under higher-for-longer rate repricing (Zoonova, 2026-09-15).</td>
+<td>Interest rate sensitivity and fixed-rate asset repricing amid rising short-term benchmark rates (Zoonova, 2026-09-15).</td>
 </tr>
 </tbody>
 </table>
-<h2>3. ALPHA PROBABILITY &amp; PRICE DELTA LEADERBOARD &ndash; 1-YEAR HORIZON</h2>
-<h3>S&amp;P 500 &ndash; Top 5 High Alpha Probability (1yr)</h3>
+<p>(Zoonova, 2026-09-15)</p>
+<h3>3. ALPHA PROBABILITY &amp; PRICE DELTA LEADERBOARD &ndash; 1-YEAR HORIZON</h3>
+<p><strong>S&amp;P 500 &ndash; Top 5 High Alpha Probability (1yr)</strong></p>
 <table>
 <thead>
 <tr>
@@ -524,7 +578,8 @@ main.container > p:last-child {
 </tr>
 </tbody>
 </table>
-<h3>S&amp;P 500 &ndash; Top 5 Price Delta + % Change (1yr)</h3>
+<p>(Zoonova, 2026-09-15)</p>
+<p><strong>S&amp;P 500 &ndash; Top 5 Price Delta + % Change (1yr)</strong></p>
 <table>
 <thead>
 <tr>
@@ -540,40 +595,41 @@ main.container > p:last-child {
 <td>PARA (Micro-Cap)</td>
 <td>1.00</td>
 <td>1.45</td>
-<td>+0.45</td>
+<td>0.45</td>
 <td>+31.30%</td>
 </tr>
 <tr>
 <td>CCL</td>
 <td>22.11</td>
 <td>28.96</td>
-<td>+6.85</td>
+<td>6.85</td>
 <td>+23.44%</td>
 </tr>
 <tr>
 <td>UAL</td>
 <td>106.92</td>
 <td>140.72</td>
-<td>+33.80</td>
+<td>33.80</td>
 <td>+17.34%</td>
 </tr>
 <tr>
 <td>EPAM</td>
 <td>123.51</td>
 <td>161.02</td>
-<td>+37.51</td>
+<td>37.51</td>
 <td>+16.09%</td>
 </tr>
 <tr>
 <td>NCLH</td>
 <td>14.28</td>
 <td>17.70</td>
-<td>+3.42</td>
+<td>3.42</td>
 <td>+15.04%</td>
 </tr>
 </tbody>
 </table>
-<h3>NASDAQ 100 &ndash; Top 5 High Alpha Probability (1yr)</h3>
+<p>(Zoonova, 2026-09-15)</p>
+<p><strong>NASDAQ 100 &ndash; Top 5 High Alpha Probability (1yr)</strong></p>
 <table>
 <thead>
 <tr>
@@ -622,7 +678,8 @@ main.container > p:last-child {
 </tr>
 </tbody>
 </table>
-<h3>NASDAQ 100 &ndash; Top 5 Price Delta + % Change (1yr)</h3>
+<p>(Zoonova, 2026-09-15)</p>
+<p><strong>NASDAQ 100 &ndash; Top 5 Price Delta + % Change (1yr)</strong></p>
 <table>
 <thead>
 <tr>
@@ -638,47 +695,50 @@ main.container > p:last-child {
 <td>LULU</td>
 <td>98.37</td>
 <td>119.68</td>
-<td>+21.31</td>
+<td>21.31</td>
 <td>+12.15%</td>
 </tr>
 <tr>
 <td>CHTR</td>
 <td>141.20</td>
 <td>174.32</td>
-<td>+33.12</td>
+<td>33.12</td>
 <td>+11.34%</td>
 </tr>
 <tr>
 <td>LCID</td>
 <td>4.12</td>
 <td>4.95</td>
-<td>+0.83</td>
+<td>0.83</td>
 <td>+10.29%</td>
 </tr>
 <tr>
 <td>ZM</td>
 <td>93.07</td>
 <td>111.21</td>
-<td>+18.14</td>
+<td>18.14</td>
 <td>+9.78%</td>
 </tr>
 <tr>
 <td>PDD</td>
 <td>78.08</td>
 <td>93.90</td>
-<td>+15.82</td>
+<td>15.82</td>
 <td>+9.63%</td>
 </tr>
 </tbody>
 </table>
-<h2>4. REAL-TIME CONTEXTUAL ENRICHMENT</h2>
+<p>(Zoonova, 2026-09-15)</p>
+<h3>4. REAL-TIME CONTEXTUAL ENRICHMENT</h3>
+<p>The macroeconomic backdrop on 2026-09-16 is defined by the Federal Open Market Committee's monetary policy update:</p>
 <ul>
-<li><strong>Federal Reserve Policy Decision</strong>: On 2026-09-16, the Federal Open Market Committee raised the federal funds target range by 25 basis points to 3.75%-4.00% by a unanimous 12-0 vote (<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESe2LtQQWxgLolmN4Se6OZaHtb_JxtydCR5-4BDLokg8PuwzpiheP290LacmmvV7C6gY08cSSPm2dkktw9DaiUh2Q5xu5phjh1QCGqKo0xhar4w-fdgOL5oBqlwo2LAqQsEWs3abdcfttRM8RWAH_eX9QgdxlZPmShJzTSfoVitw0qjA==">Federal Reserve Board</a>, 2026-09-16). While short-term Treasury yields jumped to 4.71%, equity indices held resilient as markets digested the preemptive move against stubborn core inflation (<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_Z_NDsreJmKT7gkxf-wKQ6rizsqvxY_-9GKGiKTVhLnX8Iw0orQpLXXby-GT9aRVX6hncWOElD81P4qQ8KmHjEelPUjRmcHw9tqUAqnMME32IQg-RsRddwP1xWPjKxDonmA8gDoGOrfJjHkTPwMSV7oyte-mh31rz6bGe3pt2I42L2Ss2GrKN-5zppX7yPtgAyXqo-BXMWvcTGzaEeWnFY6UhoVhgmYeroydRLwe9wbs667FnianvyDGni3znjXjsZyX8M7fIt_HjyA==">The Motley Fool</a>, 2026-09-16; <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFI-wJUYtkPgc2srac95STz1PNpbmoQ1gg7eO6-JBsTKczXcHFjoQz_mKpbyT9z0Iq3HRy-kYsexV_vyXyEE3w0BTPrRtY0LB4xyU262E_D-XzcIzEZ5NsgvIW90UruY36onLVwZfb1zdlCrLn3THZ6kWuhhgulMDCktBhItXw2PvsyZYzfscxivWXjh48=">Business Insider</a>, 2026-09-16).</li>
-<li><strong>Housing Sector &amp; Lennar (LEN)</strong>: Lennar reported Q3 2026 adjusted EPS of $1.23 on $8.05 billion in revenue, missing consensus estimates as mortgage rates hovering near 6.8% pressured deliveries and order volume (<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENxRuAGW3nek6UXidug6ZS__rfx1oBeNTaLfkJJGvPrb5pZunkUTn-idWtc_gKiwVhM62tum3QjEbvYTuvkgUmqStfNh9RQbYI1b_u6DepZYW-tU56Yf0hEK_thtGW_7tkmey9vVh6KEVPXkFeJ99PuY_bZfSNqQQkr4pR2Lfj5WPft_UR19VKYicVNbYlRv5gRdQoDmH8g0yVCN5wq8Kx9Hy9iOvyrvVlKFTlU9KvVGcu">Investing.com</a>, 2026-09-16). Despite near-term margin pressure from rate buydown incentives, Zoonova's TFT model maintains a 91.38% 1-year alpha outperformance probability, supported by structural long-term supply deficits (Zoonova, 2026-09-15).</li>
-<li><strong>Online Wagering &amp; DraftKings (DKNG)</strong>: DraftKings sentiment surged to 98% following nationwide rollouts of prediction markets timed to the NFL calendar and positive operating cash flow targets (<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGhzjE4kqOiuukKb5DgbZQrvDKgCkF3WqPe0ro417Qv_qMvAi0dsOeXsywUJTh7bmsIG7FLf4iEEwZ4ecV2XLBmrcghjtTCZOAbHIBK2Ts9fCTvKbVj1lzccxUVG45VsU_woFJIVfqHumOlYIJGuSyE6YEjVTwI1Datjk9NxkX9TtqPi2zTwhfYhhlxR1nm0GcQXa6t-NivMu-hMktkZeb8jtai4JgrYBcRapaPJVnFsvuc4k02eN5a9Y1T7vD0GBP">Simply Wall St</a>, 2026-09-12; <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNHES69-4Og-llnUMGGu7d0N9lY58SGGtiEocCI5YCqYBE9WoLun17WTnULaNRiH0oyGdxi_Xi73rK5jsmoBdwASPf-0i-Zpb6NTPNsEzBTOwNzOH8aLzsEhzzKWaXfdbnUqsb_yhVeUzd0ewCN8yOw8XfOvYEfMivujoJxVJYIg_alZo9wpupGIHs8kkNlk-t1dpuOSjvUs4t-fYnmJm8sk4=">Seeking Alpha</a>, 2026-09-11).</li>
-<li><strong>Retail &amp; Discount Headwinds (DLTR)</strong>: Dollar Tree sentiment tumbled to -98% following lower-than-anticipated Q3 guidance and consumer trade-down friction, though full-year execution and multi-price point expansions remain intact (<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEF0of4H27IPDGMXydemtkpS4PEVfUG8tqK9Zcjl1pV7MQVJ7_9rNHAWtGOE4A1P3hvIoNr1vlM9VrEKnHr8PpzpLDRHn5vTWfH1fmU_T0vea22s4P9hu0fwU5BNGBQlGttWRNFj-8K1316AIUG3gckguxApdRxOIzypJ7ip2BHf1ulQRAT6rLWQbg8Q5Y0CFtsn41S-z70wsXC6QGvolyWn9myUeSPNpmptbzVH9lIGpAv">MarketBeat</a>, 2026-09-11; <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBWHHegbHOxz41E_N8qq7higueCLEkNZpttzMfURY_onu4jw2iJvTIT9Rdcn9RQrGCawWYUjGtsW6HyRSxqKm2jb41Km1TeXFS55tiDbQJalNhIXSohcfhz1Ukd4LdwIQZGV1KF8Ozxyh42ZH7alDmvM0JMm5NdBLVabUZieJtKMYu9rHJ4A5ot0MWNOpsICc90DSQ6T9C3l8alcNdevhU6oXdW6QIybebnmVn88qAqUDjAE0vO9vH">Investing.com</a>, 2026-08-27).</li>
+<li>Fed Policy Tightening: The Federal Reserve raised the federal funds target rate by 25 basis points to 3.75%-4.00% on 2026-09-16, marking its first interest rate hike in three years (<a href="https://www.conference-board.org">The Conference Board</a>, 2026-09-16; <a href="https://www.fool.com">The Motley Fool</a>, 2026-09-16). Chairman Kevin Warsh signaled that persistent 3.4% core inflation and economic resilience necessitate higher-for-longer borrowing costs, with dot-plot projections forecasting an additional rate hike in late 2026 (<a href="https://www.fool.com">The Motley Fool</a>, 2026-09-16; <a href="https://www.kiplinger.com">Kiplinger</a>, 2026-09-16).</li>
+<li>Homebuilder Margin Headwinds (LEN): Lennar Corporation reported fiscal Q3 2026 earnings on 2026-09-16, missing consensus estimates with adjusted EPS of $1.23 versus $1.29 expected, while lowering full-year delivery guidance to 80,000-81,000 homes as mortgage rates surged back toward 6.8% (<a href="https://www.investing.com">Investing.com</a>, 2026-09-16; <a href="https://seekingalpha.com">Seeking Alpha</a>, 2026-09-16). While Lennar exhibits high model-projected alpha probability (91.38%), near-term margin pressure confirms fundamental softness.</li>
+<li>Fintech Turnaround Initiatives (FISV): Fiserv management outlined its &quot;Project Elevate&quot; operational restructuring at the Goldman Sachs Communacopia Conference, detailing $500 million in cumulative cost reductions and 13% volume expansion in its Clover platform (<a href="https://www.investing.com">Investing.com</a>, 2026-09-10; <a href="https://simplywall.st">Simply Wall St</a>, 2026-09-16). This aligns directly with its top-ranked 66.09% 1-year alpha probability score.</li>
+<li>Wagering &amp; Consumer Momentum (DKNG): DraftKings continues to post elevated sentiment (+98.0%) driven by NFL seasonal volume inflections, expanding prediction markets, and favorable court rulings distinguishing sports betting from swaps regulations (<a href="https://www.timothysykes.com">Timothy Sykes</a>, 2026-09-11; <a href="https://www.zacks.com">Zacks</a>, 2026-09-14).</li>
+<li>Biotechnology Headline Pressures (REGN &amp; ZTS): Regeneron faces sustained legal headwinds following class action deadlines related to the failed Phase 3 Fianlimab-Libtayo melanoma trial (<a href="https://www.prnewswire.com">PR Newswire</a>, 2026-09-10). Concurrently, Zoetis management noted cyclical softness in companion animal care during recent healthcare forums, though pipeline expansions in chronic pet care provide defensive value support (<a href="https://uk.investing.com">Investing.com UK</a>, 2026-09-14).</li>
 </ul>
-<h2>5. ANOMALY DETECTION SCANNER</h2>
+<h3>5. ANOMALY DETECTION SCANNER</h3>
 <h3>Direction: Bearish</h3>
 <h4>High Severity</h4>
 <ul>
@@ -726,11 +786,11 @@ main.container > p:last-child {
 <li>PANW &ndash; Palo Alto Networks Inc: Bullish Long-Term (1w) Trend Anomaly</li>
 <li>QRVO &ndash; Qorvo Inc: Bullish Short-Term (3d) Trend Anomaly</li>
 </ul>
-<h2>6. STRATEGIC INVESTMENT ASSESSMENT</h2>
+<h3>6. STRATEGIC INVESTMENT ASSESSMENT</h3>
 <ul>
-<li><strong>Macro Allocation Stance</strong>: Maintain a balanced, quality-skewed positioning. The Federal Reserve's 25 bps rate increase confirms a higher-for-longer monetary regime, supporting mega-cap technology leaders with clean balance sheets (e.g., AVGO, MSFT, AMZN) while pressuring capital-intensive and duration-sensitive sectors (<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESe2LtQQWxgLolmN4Se6OZaHtb_JxtydCR5-4BDLokg8PuwzpiheP290LacmmvV7C6gY08cSSPm2dkktw9DaiUh2Q5xu5phjh1QCGqKo0xhar4w-fdgOL5oBqlwo2LAqQsEWs3abdcfttRM8RWAH_eX9QgdxlZPmShJzTSfoVitw0qjA==">Federal Reserve Board</a>, 2026-09-16).</li>
-<li><strong>Alpha Exploitation</strong>: Target high-conviction ML alpha probability names where long-term fundamentals diverge from transitory sentiment troughs, including Lennar (LEN, 91.38% alpha probability) and Fiserv (FISV, 66.09% alpha probability) (Zoonova, 2026-09-15).</li>
-<li><strong>Risk Mitigation &amp; Anomaly Avoidance</strong>: Exercise caution in semiconductor equipment (AMAT, KLAC, LRCX) and developmental biotech (ARWR, BBIO, IONS), where BIRCH clustering flags multi-timeframe bearish anomalies (Zoonova, 2026-09-15).</li>
+<li>Macro Alignment &amp; Duration Management: The Federal Reserve's rate hike to 3.75%-4.00% confirms that monetary tightening remains an active macro headwind (<a href="https://www.conference-board.org">The Conference Board</a>, 2026-09-16). Fixed-income allocations should maintain intermediate duration discipline (BND 1-year implied price $79.31) to mitigate interest rate volatility (Zoonova, 2026-09-15).</li>
+<li>Semiconductor &amp; Capital Equipment Caution: A dense cluster of high-severity bearish anomalies across AMAT, KLAC, LRCX, MU, TER, and WDC indicates cyclical distribution across semiconductor capital goods (Zoonova, 2026-09-15). New capital exposure in hardware equipment should be delayed until multi-week momentum stabilizes.</li>
+<li>Selective Alpha in Turnaround Fintech &amp; Large-Cap Tech: Exposure should be prioritized in high alpha probability assets with tangible operational catalysts, such as Fiserv (FISV, 66.09% alpha probability) and Broadcom (AVGO, 75.0% composite rating), while maintaining hedged positioning in rate-sensitive consumer and homebuilding names (Zoonova, 2026-09-15; <a href="https://www.investing.com">Investing.com</a>, 2026-09-10).</li>
 </ul>
 <h3>7. STOCK SCORECARD</h3>
 <p><strong>Main Scorecard</strong></p>
@@ -758,342 +818,342 @@ main.container > p:last-child {
 <tr>
 <td>LEN</td>
 <td>63.3%</td>
-<td>96.3</td>
-<td>41.0</td>
-<td>50.0</td>
-<td>58.5</td>
+<td>96.3%</td>
+<td>41.0%</td>
+<td>50.0%</td>
+<td>58.5%</td>
 <td>None</td>
-<td>$42.8B</td>
-<td>Upward (+1.8%)</td>
-<td>Upward</td>
-<td>2.8% / 2.1 DTC</td>
-<td>Bullish (Call Skew)</td>
-<td>3/4 Beats</td>
+<td>$19.4B</td>
+<td>Downward (-1.5%)</td>
+<td>Downward</td>
+<td>8.8% / 7.1 DTC</td>
+<td>Bearish (Put Heavy)</td>
+<td>1/4 Beats (-4.1% avg)</td>
 <td>Neutral</td>
-<td>Zacks, 2026-09-15</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>DKNG</td>
 <td>62.5%</td>
-<td>36.1</td>
-<td>99.0</td>
-<td>50.0</td>
-<td>71.8</td>
+<td>36.1%</td>
+<td>99.0%</td>
+<td>50.0%</td>
+<td>71.8%</td>
 <td>None</td>
-<td>$21.4B</td>
-<td>Upward (+2.4%)</td>
-<td>Upward</td>
-<td>4.6% / 2.3 DTC</td>
+<td>$11.5B</td>
+<td>Downward (-2.4%)</td>
+<td>Downward</td>
+<td>4.8% / 4.1 DTC</td>
 <td>Bullish (Call Skew)</td>
-<td>3/4 Beats</td>
+<td>2/4 Beats</td>
 <td>Neutral</td>
-<td>MarketBeat, 2026-09-14</td>
+<td>Zacks, 2026-09-16</td>
 </tr>
 <tr>
 <td>ZTS</td>
 <td>60.0%</td>
-<td>62.4</td>
-<td>70.0</td>
-<td>50.0</td>
-<td>56.6</td>
+<td>62.4%</td>
+<td>70.0%</td>
+<td>50.0%</td>
+<td>56.6%</td>
 <td>None</td>
-<td>$78.5B</td>
-<td>Neutral/Flat</td>
-<td>Neutral/Flat</td>
-<td>1.4% / 2.2 DTC</td>
+<td>$31.2B</td>
+<td>Downward (-1.2%)</td>
+<td>Downward</td>
+<td>3.4% / 4.1 DTC</td>
 <td>Neutral / Mixed</td>
-<td>4/4 Beats (+3.8% avg)</td>
+<td>3/4 Beats (+1.6% avg)</td>
 <td>Neutral</td>
-<td>Zacks, 2026-09-12</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>GOSS</td>
 <td>59.5%</td>
-<td>15.1</td>
-<td>69.0</td>
-<td>75.0</td>
-<td>94.7</td>
+<td>15.1%</td>
+<td>69.0%</td>
+<td>75.0%</td>
+<td>94.7%</td>
 <td>Bullish (1w)</td>
-<td>$480M</td>
+<td>$128.8M</td>
 <td>N/A (Pre-Revenue)</td>
 <td>N/A</td>
-<td>7.8% / 4.6 DTC</td>
-<td>Bullish (Call Skew)</td>
-<td>N/A (No Coverage)</td>
+<td>18.4% / 3.0 DTC</td>
+<td>Unusual Volume Detected</td>
+<td>2/4 Beats</td>
 <td>Neutral</td>
-<td>LSEG, 2026-09-10</td>
+<td>Fintel, 2026-09-16</td>
 </tr>
 <tr>
 <td>LULU</td>
 <td>58.9%</td>
-<td>29.0</td>
-<td>81.0</td>
-<td>50.0</td>
-<td>87.4</td>
+<td>29.0%</td>
+<td>81.0%</td>
+<td>50.0%</td>
+<td>87.4%</td>
 <td>None</td>
-<td>$34.2B</td>
-<td>Downward (-1.2%)</td>
-<td>Downward</td>
-<td>6.2% / 3.4 DTC</td>
+<td>$11.0B</td>
+<td>Downward (-4.8%)</td>
+<td>Heavy Downgrade</td>
+<td>10.4% / 3.3 DTC</td>
 <td>Bearish (Put Heavy)</td>
-<td>3/4 Beats</td>
+<td>4/4 Beats (+15.1% avg)</td>
 <td>Neutral</td>
-<td>MarketBeat, 2026-09-15</td>
+<td>Zacks, 2026-09-16</td>
 </tr>
 <tr>
 <td>CLLS</td>
 <td>58.7%</td>
-<td>77.4</td>
-<td>50.0</td>
-<td>25.0</td>
-<td>83.8</td>
+<td>77.4%</td>
+<td>50.0%</td>
+<td>25.0%</td>
+<td>83.8%</td>
 <td>Bearish (1w)</td>
-<td>$210M</td>
+<td>$165.4M</td>
 <td>N/A (Pre-Revenue)</td>
 <td>N/A</td>
-<td>3.1% / 1.8 DTC</td>
+<td>2.8% / 3.0 DTC</td>
 <td>Neutral / Mixed</td>
-<td>N/A (No Coverage)</td>
+<td>2/4 Beats</td>
 <td>Neutral</td>
-<td>LSEG, 2026-09-11</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>SMSI</td>
 <td>56.8%</td>
-<td>25.3</td>
-<td>99.0</td>
-<td>50.0</td>
-<td>59.5</td>
+<td>25.3%</td>
+<td>99.0%</td>
+<td>50.0%</td>
+<td>59.5%</td>
 <td>None</td>
-<td>$45M</td>
-<td>Downward (-2.8%)</td>
-<td>Downward</td>
-<td>2.4% / 1.5 DTC</td>
+<td>$24.8M</td>
+<td>Downward (-3.8%)</td>
+<td>Heavy Downgrade</td>
+<td>5.2% / 6.4 DTC</td>
 <td>Neutral / Mixed</td>
-<td>2/4 Beats</td>
+<td>Consistent Misses</td>
 <td>Neutral</td>
-<td>Zacks, 2026-09-08</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>ZM</td>
 <td>55.3%</td>
-<td>12.3</td>
-<td>90.5</td>
-<td>50.0</td>
-<td>82.4</td>
+<td>12.3%</td>
+<td>90.5%</td>
+<td>50.0%</td>
+<td>82.4%</td>
 <td>None</td>
-<td>$20.6B</td>
-<td>Upward (+1.5%)</td>
+<td>$28.5B</td>
+<td>Upward (+1.3%)</td>
 <td>Upward</td>
-<td>4.1% / 3.0 DTC</td>
+<td>2.7% / 1.9 DTC</td>
 <td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+6.4% avg)</td>
+<td>4/4 Beats (+5.8% avg)</td>
 <td>Neutral</td>
-<td>MarketBeat, 2026-09-14</td>
+<td>Zacks, 2026-09-16</td>
 </tr>
 <tr>
 <td>LRCX</td>
 <td>45.5%</td>
-<td>13.2</td>
-<td>85.5</td>
-<td>25.0</td>
-<td>69.8</td>
+<td>13.2%</td>
+<td>85.5%</td>
+<td>25.0%</td>
+<td>69.8%</td>
 <td>Bearish (1w)</td>
-<td>$118.5B</td>
-<td>Upward (+3.2%)</td>
-<td>Strong Upward</td>
-<td>2.1% / 1.9 DTC</td>
-<td>Unusual Volume Detected</td>
-<td>4/4 Beats (+4.1% avg)</td>
+<td>$373.2B</td>
+<td>Upward (+2.8%)</td>
+<td>Upward</td>
+<td>2.2% / 3.8 DTC</td>
+<td>Bullish (Call Skew)</td>
+<td>4/4 Beats (+7.1% avg)</td>
 <td>Neutral</td>
-<td>Zacks, 2026-09-15</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>PDD</td>
 <td>42.6%</td>
-<td>10.7</td>
-<td>42.0</td>
-<td>50.0</td>
-<td>81.8</td>
+<td>10.7%</td>
+<td>42.0%</td>
+<td>50.0%</td>
+<td>81.8%</td>
 <td>None</td>
-<td>$162.3B</td>
-<td>Downward (-4.5%)</td>
-<td>Heavy Downgrade</td>
-<td>2.9% / 2.0 DTC</td>
+<td>$125.8B</td>
+<td>Downward (-1.8%)</td>
+<td>Downward</td>
+<td>2.6% / 4.3 DTC</td>
 <td>Bearish (Put Heavy)</td>
-<td>3/4 Beats</td>
+<td>3/4 Beats (+5.3% avg)</td>
 <td>Neutral</td>
-<td>MarketBeat, 2026-09-13</td>
+<td>Zacks, 2026-09-16</td>
 </tr>
 <tr>
 <td>TSCO</td>
 <td>41.4%</td>
-<td>58.6</td>
-<td>12.5</td>
-<td>50.0</td>
-<td>41.0</td>
+<td>58.6%</td>
+<td>12.5%</td>
+<td>50.0%</td>
+<td>41.0%</td>
 <td>None</td>
-<td>$30.8B</td>
-<td>Neutral/Flat</td>
-<td>Neutral/Flat</td>
-<td>2.5% / 2.7 DTC</td>
-<td>Neutral / Mixed</td>
-<td>3/4 Beats</td>
+<td>$17.2B</td>
+<td>Downward (-4.4%)</td>
+<td>Heavy Downgrade</td>
+<td>8.3% / 5.5 DTC</td>
+<td>Bearish (Put Heavy)</td>
+<td>2/4 Beats</td>
 <td>Bearish</td>
-<td>Zacks, 2026-09-11</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>LCID</td>
 <td>41.2%</td>
-<td>13.3</td>
-<td>31.5</td>
-<td>50.0</td>
-<td>84.0</td>
+<td>13.3%</td>
+<td>31.5%</td>
+<td>50.0%</td>
+<td>84.0%</td>
 <td>None</td>
-<td>$8.2B</td>
-<td>Downward (-5.1%)</td>
+<td>$1.6B</td>
+<td>Downward (-5.2%)</td>
 <td>Heavy Downgrade</td>
-<td>14.8% / 5.8 DTC</td>
-<td>Bearish (Put Heavy)</td>
+<td>48.0% / 6.4 DTC</td>
+<td>Unusual Volume Detected</td>
 <td>Consistent Misses</td>
 <td>Bearish</td>
-<td>MarketBeat, 2026-09-15</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>CTMX</td>
 <td>40.9%</td>
-<td>24.7</td>
-<td>62.5</td>
-<td>0.0</td>
-<td>89.6</td>
+<td>24.7%</td>
+<td>62.5%</td>
+<td>0.0%</td>
+<td>89.6%</td>
 <td>Bearish (3d/1w)</td>
-<td>$145M</td>
+<td>$148.5M</td>
 <td>N/A (Pre-Revenue)</td>
 <td>N/A</td>
-<td>4.5% / 2.9 DTC</td>
-<td>Bearish (Put Heavy)</td>
-<td>N/A (No Coverage)</td>
+<td>22.4% / 11.8 DTC</td>
+<td>Unusual Volume Detected</td>
+<td>2/4 Beats</td>
 <td>Neutral</td>
-<td>LSEG, 2026-09-09</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>ASMB</td>
 <td>39.0%</td>
-<td>14.7</td>
-<td>69.0</td>
-<td>0.0</td>
-<td>86.9</td>
+<td>14.7%</td>
+<td>69.0%</td>
+<td>0.0%</td>
+<td>86.9%</td>
 <td>Bearish (3d/1w)</td>
-<td>$95M</td>
+<td>$218.0M</td>
 <td>N/A (Pre-Revenue)</td>
 <td>N/A</td>
-<td>3.8% / 2.1 DTC</td>
-<td>Neutral / Mixed</td>
-<td>N/A (No Coverage)</td>
+<td>6.8% / 10.1 DTC</td>
+<td>Bullish (Call Skew)</td>
+<td>3/4 Beats</td>
 <td>Bearish</td>
-<td>LSEG, 2026-09-08</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>IONS</td>
 <td>35.6%</td>
-<td>14.4</td>
-<td>57.5</td>
-<td>0.0</td>
-<td>84.5</td>
+<td>14.4%</td>
+<td>57.5%</td>
+<td>0.0%</td>
+<td>84.5%</td>
 <td>Bearish (3d/1w)</td>
-<td>$6.4B</td>
-<td>Downward (-2.0%)</td>
-<td>Downward</td>
-<td>8.1% / 4.9 DTC</td>
+<td>$7.8B</td>
+<td>Upward (+1.5%)</td>
+<td>Upward</td>
+<td>14.1% / 9.6 DTC</td>
 <td>Bearish (Put Heavy)</td>
-<td>2/4 Beats</td>
+<td>3/4 Beats (+35.2% avg)</td>
 <td>Bearish</td>
-<td>Zacks, 2026-09-12</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>INSM</td>
 <td>34.6%</td>
-<td>10.6</td>
-<td>46.0</td>
-<td>25.0</td>
-<td>68.5</td>
+<td>10.6%</td>
+<td>46.0%</td>
+<td>25.0%</td>
+<td>68.5%</td>
 <td>Bearish (3d)</td>
-<td>$11.2B</td>
-<td>Upward (+0.8%)</td>
-<td>Upward</td>
-<td>5.6% / 3.7 DTC</td>
-<td>Neutral / Mixed</td>
+<td>$28.3B</td>
+<td>Upward (+8.5%)</td>
+<td>Strong Upward</td>
+<td>7.2% / 2.7 DTC</td>
+<td>Bullish (Call Skew)</td>
 <td>2/4 Beats</td>
 <td>Bearish</td>
-<td>MarketBeat, 2026-09-10</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>WDC</td>
 <td>28.0%</td>
-<td>6.9</td>
-<td>50.0</td>
-<td>0.0</td>
-<td>67.2</td>
+<td>6.9%</td>
+<td>50.0%</td>
+<td>0.0%</td>
+<td>67.2%</td>
 <td>Bearish (3d/1w)</td>
-<td>$24.7B</td>
-<td>Upward (+4.1%)</td>
+<td>$161.2B</td>
+<td>Upward (+4.2%)</td>
 <td>Strong Upward</td>
-<td>3.3% / 1.7 DTC</td>
-<td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+8.2% avg)</td>
+<td>5.6% / 2.4 DTC</td>
+<td>Bearish (Put Heavy)</td>
+<td>4/4 Beats (+6.3% avg)</td>
 <td>Bearish</td>
-<td>Zacks, 2026-09-15</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>CBOE</td>
 <td>27.4%</td>
-<td>7.8</td>
-<td>92.5</td>
-<td>0.0</td>
-<td>9.6</td>
+<td>7.8%</td>
+<td>92.5%</td>
+<td>0.0%</td>
+<td>9.6%</td>
 <td>Bearish (3d/1w)</td>
-<td>$21.5B</td>
-<td>Neutral/Flat</td>
-<td>Neutral/Flat</td>
-<td>1.9% / 2.4 DTC</td>
-<td>Neutral / Mixed</td>
-<td>4/4 Beats (+3.0% avg)</td>
+<td>$28.1B</td>
+<td>Upward (+3.1%)</td>
+<td>Strong Upward</td>
+<td>2.9% / 2.1 DTC</td>
+<td>Bullish (Call Skew)</td>
+<td>4/4 Beats (+4.8% avg)</td>
 <td>Bearish</td>
-<td>MarketBeat, 2026-09-14</td>
+<td>Finviz, 2026-09-16</td>
 </tr>
 <tr>
 <td>JKHY</td>
 <td>26.1%</td>
-<td>10.7</td>
-<td>50.0</td>
-<td>25.0</td>
-<td>20.5</td>
+<td>10.7%</td>
+<td>50.0%</td>
+<td>25.0%</td>
+<td>20.5%</td>
 <td>Bearish (3d)</td>
-<td>$12.1B</td>
+<td>$11.6B</td>
 <td>Neutral/Flat</td>
 <td>Neutral/Flat</td>
-<td>3.2% / 3.8 DTC</td>
+<td>3.1% / 3.4 DTC</td>
 <td>Neutral / Mixed</td>
-<td>3/4 Beats</td>
+<td>4/4 Beats (+3.2% avg)</td>
 <td>Bearish</td>
-<td>Zacks, 2026-09-11</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>REGN</td>
 <td>23.6%</td>
-<td>17.9</td>
-<td>5.5</td>
-<td>50.0</td>
-<td>22.0</td>
+<td>17.9%</td>
+<td>5.5%</td>
+<td>50.0%</td>
+<td>22.0%</td>
 <td>None</td>
-<td>$85.1B</td>
-<td>Downward (-1.6%)</td>
-<td>Downward</td>
-<td>1.8% / 2.6 DTC</td>
+<td>$77.0B</td>
+<td>Downward (-3.5%)</td>
+<td>Heavy Downgrade</td>
+<td>2.4% / 3.2 DTC</td>
 <td>Bearish (Put Heavy)</td>
-<td>4/4 Beats (+12.9% avg)</td>
+<td>3/4 Beats (+2.1% avg)</td>
 <td>Bearish</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjauyj1OTBE_NkbP9QhSiiYM5J8A26hOhnHOgxTtdNXQBJQWqnO7rAxdN4P5bkUj2MiaS7d_9TCMlfTNfW-ujAJ4kXgy60zVZ4ctMJAv_3kGQxzShFsVkXS9oE7Yi7VVj7PALqb2AmZkk2Xbqy9Dg">Trading Economics</a>, 2026-09-15</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 </tbody>
 </table>
@@ -1122,172 +1182,172 @@ main.container > p:last-child {
 <tr>
 <td>AVGO</td>
 <td>75.0%</td>
-<td>100.0</td>
-<td>74.0</td>
-<td>50.0</td>
-<td>70.0</td>
+<td>100.0%</td>
+<td>74.0%</td>
+<td>50.0%</td>
+<td>70.0%</td>
 <td>None</td>
-<td>$1.6T</td>
-<td>Upward (+3.8%)</td>
+<td>$1.68T</td>
+<td>Upward (+4.5%)</td>
 <td>Strong Upward</td>
-<td>1.6% / 1.8 DTC</td>
+<td>1.8% / 2.4 DTC</td>
 <td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+4.5% avg)</td>
+<td>4/4 Beats (+5.4% avg)</td>
 <td>Bullish</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeTfJTTFE3S5exsPjyI-H1h4_l5hi11hiMbJTnjJPai9enyrKt5y5NYvX2p4MjwUgLhlNHpGtd827rErRugD9rjUtYcm28glduo8Zpsr&ndash;BSSHPVO6lTYavN9DZu8R76Ati0cgEcUwXV9T_zJuCWVQlbK7">The Motley Fool</a>, 2026-09-07</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>INTC</td>
 <td>57.9%</td>
-<td>12.5</td>
-<td>86.5</td>
-<td>50.0</td>
-<td>100.0</td>
+<td>12.5%</td>
+<td>86.5%</td>
+<td>50.0%</td>
+<td>100.0%</td>
 <td>None</td>
-<td>$108.4B</td>
-<td>Downward (-3.2%)</td>
-<td>Heavy Downgrade</td>
-<td>3.5% / 2.2 DTC</td>
-<td>Unusual Volume Detected</td>
-<td>2/4 Beats</td>
+<td>$513.8B</td>
+<td>Upward (+5.3%)</td>
+<td>Strong Upward</td>
+<td>3.0% / 1.7 DTC</td>
+<td>Bullish (Call Skew)</td>
+<td>3/4 Beats (+12.4% avg)</td>
 <td>Neutral</td>
-<td>MarketBeat, 2026-09-14</td>
+<td>Zacks, 2026-09-16</td>
 </tr>
 <tr>
 <td>AMD</td>
 <td>56.6%</td>
-<td>24.5</td>
-<td>83.0</td>
-<td>50.0</td>
-<td>80.0</td>
+<td>24.5%</td>
+<td>83.0%</td>
+<td>50.0%</td>
+<td>80.0%</td>
 <td>None</td>
-<td>$265.1B</td>
-<td>Upward (+1.2%)</td>
-<td>Upward</td>
-<td>2.4% / 1.6 DTC</td>
+<td>$844.4B</td>
+<td>Upward (+3.8%)</td>
+<td>Strong Upward</td>
+<td>2.5% / 2.1 DTC</td>
 <td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+2.7% avg)</td>
+<td>4/4 Beats (+4.7% avg)</td>
 <td>Neutral</td>
-<td>Zacks, 2026-09-15</td>
+<td>TipRanks, 2026-09-16</td>
 </tr>
 <tr>
 <td>AMZN</td>
 <td>56.2%</td>
-<td>42.4</td>
-<td>92.0</td>
-<td>50.0</td>
-<td>40.0</td>
+<td>42.4%</td>
+<td>92.0%</td>
+<td>40.0%</td>
+<td>40.0%</td>
 <td>None</td>
-<td>$2.7T</td>
-<td>Upward (+2.1%)</td>
+<td>$2.68T</td>
+<td>Upward (+1.9%)</td>
 <td>Upward</td>
-<td>0.9% / 1.2 DTC</td>
+<td>1.1% / 1.8 DTC</td>
 <td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+8.9% avg)</td>
+<td>4/4 Beats (+8.2% avg)</td>
 <td>Neutral</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeTfJTTFE3S5exsPjyI-H1h4_l5hi11hiMbJTnjJPai9enyrKt5y5NYvX2p4MjwUgLhlNHpGtd827rErRugD9rjUtYcm28glduo8Zpsr&ndash;BSSHPVO6lTYavN9DZu8R76Ati0cgEcUwXV9T_zJuCWVQlbK7">The Motley Fool</a>, 2026-09-07</td>
+<td>Seeking Alpha, 2026-09-16</td>
 </tr>
 <tr>
 <td>GOOGL</td>
 <td>56.1%</td>
-<td>90.4</td>
-<td>50.0</td>
-<td>50.0</td>
-<td>20.0</td>
+<td>90.4%</td>
+<td>50.0%</td>
+<td>50.0%</td>
+<td>20.0%</td>
 <td>None</td>
-<td>$4.2T</td>
-<td>Upward (+1.9%)</td>
+<td>$4.30T</td>
+<td>Upward (+2.1%)</td>
 <td>Upward</td>
-<td>0.8% / 1.1 DTC</td>
+<td>1.3% / 3.5 DTC</td>
 <td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+5.6% avg)</td>
+<td>4/4 Beats (+6.8% avg)</td>
 <td>Neutral</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeTfJTTFE3S5exsPjyI-H1h4_l5hi11hiMbJTnjJPai9enyrKt5y5NYvX2p4MjwUgLhlNHpGtd827rErRugD9rjUtYcm28glduo8Zpsr&ndash;BSSHPVO6lTYavN9DZu8R76Ati0cgEcUwXV9T_zJuCWVQlbK7">The Motley Fool</a>, 2026-09-07</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>MSFT</td>
 <td>53.6%</td>
-<td>52.4</td>
-<td>93.5</td>
-<td>50.0</td>
-<td>10.0</td>
+<td>52.4%</td>
+<td>93.5%</td>
+<td>50.0%</td>
+<td>10.0%</td>
 <td>None</td>
-<td>$3.7T</td>
+<td>$3.68T</td>
 <td>Upward (+1.4%)</td>
 <td>Upward</td>
-<td>0.7% / 1.3 DTC</td>
+<td>0.9% / 2.1 DTC</td>
 <td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+4.0% avg)</td>
+<td>4/4 Beats (+4.3% avg)</td>
 <td>Neutral</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeTfJTTFE3S5exsPjyI-H1h4_l5hi11hiMbJTnjJPai9enyrKt5y5NYvX2p4MjwUgLhlNHpGtd827rErRugD9rjUtYcm28glduo8Zpsr&ndash;BSSHPVO6lTYavN9DZu8R76Ati0cgEcUwXV9T_zJuCWVQlbK7">The Motley Fool</a>, 2026-09-07</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>META</td>
 <td>53.3%</td>
-<td>57.6</td>
-<td>46.0</td>
-<td>50.0</td>
-<td>60.0</td>
+<td>57.6%</td>
+<td>46.0%</td>
+<td>50.0%</td>
+<td>60.0%</td>
 <td>None</td>
-<td>$1.7T</td>
-<td>Upward (+2.8%)</td>
-<td>Upward</td>
-<td>1.1% / 1.4 DTC</td>
-<td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+7.3% avg)</td>
+<td>$1.65T</td>
+<td>Downward (-3.2%)</td>
+<td>Heavy Downgrade</td>
+<td>1.2% / 2.2 DTC</td>
+<td>Bearish (Put Heavy)</td>
+<td>3/4 Beats (+7.5% avg)</td>
 <td>Neutral</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeTfJTTFE3S5exsPjyI-H1h4_l5hi11hiMbJTnjJPai9enyrKt5y5NYvX2p4MjwUgLhlNHpGtd827rErRugD9rjUtYcm28glduo8Zpsr&ndash;BSSHPVO6lTYavN9DZu8R76Ati0cgEcUwXV9T_zJuCWVQlbK7">The Motley Fool</a>, 2026-09-07</td>
+<td>Meta IR, 2026-09-16</td>
 </tr>
 <tr>
 <td>TSLA</td>
 <td>51.4%</td>
-<td>63.0</td>
-<td>40.0</td>
-<td>50.0</td>
-<td>50.0</td>
+<td>63.0%</td>
+<td>40.0%</td>
+<td>50.0%</td>
+<td>50.0%</td>
 <td>None</td>
-<td>$1.4T</td>
-<td>Downward (-2.4%)</td>
-<td>Downward</td>
-<td>3.1% / 1.5 DTC</td>
-<td>Unusual Volume Detected</td>
-<td>2/4 Beats</td>
+<td>$1.40T</td>
+<td>Neutral/Flat</td>
+<td>Neutral/Flat</td>
+<td>2.8% / 2.0 DTC</td>
+<td>Bearish (Put Heavy)</td>
+<td>2/4 Beats (+2.5% avg)</td>
 <td>Neutral</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeTfJTTFE3S5exsPjyI-H1h4_l5hi11hiMbJTnjJPai9enyrKt5y5NYvX2p4MjwUgLhlNHpGtd827rErRugD9rjUtYcm28glduo8Zpsr&ndash;BSSHPVO6lTYavN9DZu8R76Ati0cgEcUwXV9T_zJuCWVQlbK7">The Motley Fool</a>, 2026-09-07</td>
+<td>Zacks, 2026-09-16</td>
 </tr>
 <tr>
 <td>NVDA</td>
 <td>47.5%</td>
-<td>0.0</td>
-<td>68.0</td>
-<td>50.0</td>
-<td>90.0</td>
+<td>0.0%</td>
+<td>68.0%</td>
+<td>50.0%</td>
+<td>90.0%</td>
 <td>None</td>
-<td>$5.1T</td>
-<td>Upward (+4.6%)</td>
+<td>$5.10T</td>
+<td>Upward (+3.5%)</td>
 <td>Strong Upward</td>
-<td>1.2% / 1.0 DTC</td>
+<td>1.2% / 1.9 DTC</td>
 <td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+6.8% avg)</td>
+<td>4/4 Beats (+5.4% avg)</td>
 <td>Neutral</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeTfJTTFE3S5exsPjyI-H1h4_l5hi11hiMbJTnjJPai9enyrKt5y5NYvX2p4MjwUgLhlNHpGtd827rErRugD9rjUtYcm28glduo8Zpsr&ndash;BSSHPVO6lTYavN9DZu8R76Ati0cgEcUwXV9T_zJuCWVQlbK7">The Motley Fool</a>, 2026-09-07</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>AAPL</td>
 <td>45.8%</td>
-<td>16.8</td>
-<td>89.0</td>
-<td>50.0</td>
-<td>30.0</td>
+<td>16.8%</td>
+<td>89.0%</td>
+<td>50.0%</td>
+<td>30.0%</td>
 <td>None</td>
-<td>$4.8T</td>
+<td>$4.82T</td>
 <td>Upward (+1.1%)</td>
 <td>Upward</td>
-<td>0.8% / 1.4 DTC</td>
+<td>0.9% / 3.5 DTC</td>
 <td>Bullish (Call Skew)</td>
-<td>4/4 Beats (+3.4% avg)</td>
+<td>4/4 Beats (+6.9% avg)</td>
 <td>Neutral</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeTfJTTFE3S5exsPjyI-H1h4_l5hi11hiMbJTnjJPai9enyrKt5y5NYvX2p4MjwUgLhlNHpGtd827rErRugD9rjUtYcm28glduo8Zpsr&ndash;BSSHPVO6lTYavN9DZu8R76Ati0cgEcUwXV9T_zJuCWVQlbK7">The Motley Fool</a>, 2026-09-07</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 <tr>
 <td>SPCX</td>
@@ -1297,14 +1357,14 @@ main.container > p:last-child {
 <td>N/A (Insufficient History)</td>
 <td>N/A (Insufficient History)</td>
 <td>None</td>
-<td>$1.9T</td>
-<td>Upward (+2.5%)</td>
-<td>Upward</td>
-<td>8.8% / 1.5 DTC</td>
-<td>Bullish (Call Skew)</td>
-<td>1/1 Beats</td>
+<td>$1.99T</td>
+<td>N/A (Pre-Revenue)</td>
 <td>N/A</td>
-<td><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6fUWnNPCdUKXWLY9K2ugMfAN5urw7VycB2y1r3EwaftQwPbXK7NKLepcw9B3qy7Tf1VDUX8lDvVubW7acNgB9cXbDfIczkow-AhseoluvdHI0YVbmmyuQesY=">Finviz</a>, 2026-08-31</td>
+<td>1.3% / 2.4 DTC</td>
+<td>Unusual Volume Detected</td>
+<td>N/A (No Coverage)</td>
+<td>N/A</td>
+<td>MarketBeat, 2026-09-16</td>
 </tr>
 </tbody>
 </table>
