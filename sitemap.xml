@@ -2,14 +2,14 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:news='http://www.google.com/schemas/sitemap-news/0.9'>
 	<url>
 		<loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/</loc>
-		<lastmod>2026-09-18T11:02:13</lastmod>
+		<lastmod>2026-09-18T14:02:22</lastmod>
 		<news:news>
 			<news:publication>
 				<news:name>Zoonova AI</news:name>
 				<news:language>en</news:language>
 			</news:publication>
 			<news:publication_date>2026-09-18</news:publication_date>
-			<news:title>Zoonova AI: Midday Momentum & Liquidity Report</news:title>
+			<news:title>Zoonova AI: Closing Bell Report</news:title>
 		</news:news>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
