@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--Built: 2026-10-30T15:38:08-->
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:news='http://www.google.com/schemas/sitemap-news/0.9' xmlns:image='http://www.google.com/schemas/sitemap-image/1.1'>
+	<url>
+		<loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/</loc>
+		<lastmod>2026-10-30T18:38:08-04:00</lastmod>
+		<news:news>
+			<news:publication>
+				<news:name>Zoonova AI</news:name>
+				<news:language>en</news:language>
+			</news:publication>
+			<news:publication_date>2026-10-30T17:00:00-04:00</news:publication_date>
+			<news:title>Zoonova AI: Closing Bell Market Report – October 30, 2026</news:title>
+		</news:news>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/mktinsightrep_chart_1.webp</image:loc></image:image>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/mktinsightrep_chart_2.webp</image:loc></image:image>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/mktinsightrep_chart_3.webp</image:loc></image:image>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/mktinsightrep_chart_4.webp</image:loc></image:image>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/mktinsightrep_chart_5.webp</image:loc></image:image>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/mktinsightrep_chart_6.webp</image:loc></image:image>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/tecinsightrep_chart_1.webp</image:loc></image:image>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/tecinsightrep_chart_2.webp</image:loc></image:image>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/tecinsightrep_chart_3.webp</image:loc></image:image>
+		<image:image><image:loc>https://zoonova-ai-market-intelligence.github.io/zoonova-market-intelligence/tecinsightrep_chart_4.webp</image:loc></image:image>
+		<changefreq>hourly</changefreq>
+		<priority>1.0</priority>
+	</url>
+</urlset>
