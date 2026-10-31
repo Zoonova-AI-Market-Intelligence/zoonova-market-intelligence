@@ -1,0 +1,102 @@
+name: Zoonova 3x Daily Market Intelligence
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+on:
+  schedule:
+    # 9:00 AM EDT (13:00 UTC)
+    - cron: '0 13 * * 1-6'
+    # 2:05 PM EDT (18:05 UTC) and 5:05 PM EDT (21:05 UTC)
+    - cron: '5 18,21 * * 1-6'
+  workflow_dispatch:
+    inputs:
+      session_override:
+        description: 'Session Override'
+        required: true
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - pre_market
+          - midday
+          - post_close
+
+
+
+jobs:
+  run-publisher:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install google-genai google-auth markdown requests
+
+      - name: Run Zoonova Analysis Engine
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ZOONOVA_BASE_URL: "https://zoonova.com"
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+        run: |
+          python - << 'EOF'
+          import os, sys
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          override = "${{ github.event.inputs.session_override }}"
+          if override and override != "auto":
+              ret = os.system(f"python zoonova_publisher.py --session {override}")
+              sys.exit(ret >> 8)
+
+          ny_now = datetime.now(ZoneInfo("America/New_York"))
+          hour, minute = ny_now.hour, ny_now.minute
+
+          if hour < 12:
+              ret = os.system("python zoonova_publisher.py --session pre_market")
+          elif 12 <= hour < 16:
+              ret = os.system("python zoonova_publisher.py --session midday")
+          else:
+              ret = os.system("python zoonova_publisher.py --session post_close")
+
+          sys.exit(ret >> 8)
+          EOF
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+     
+      - name: Commit and Push Generated Reports
+        run: |
+          git config --global user.name "Zoonova Engine Bot"
+          git config --global user.email "bot@zoonova.com"
+          git add reports/ index.html
+          if git diff --staged --quiet; then
+            echo "No report updates to commit."
+          else
+            git commit -m "Auto-publish market intelligence" 
+            git push
+          fi
