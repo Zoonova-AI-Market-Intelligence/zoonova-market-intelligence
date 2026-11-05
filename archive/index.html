@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src='https://www.googletagmanager.com/gtag/js?id=G-C1TKGPSXW0'></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-C1TKGPSXW0');
+	</script>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel='icon' href='https://insights.zoonova.com/favicon.ico'>
+<title>Zoonova AI: Report Archive</title>
+<meta name='description' content='Every archived Zoonova AI market report, newest first.'>
+<meta name='robots' content='index, follow'>
+<link rel='canonical' href='https://insights.zoonova.com/archive/'>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap'>
+<style>
+	:root {
+		--bg-primary  : #080c14;
+		--bg-surface  : #0f1623;
+		--bg-card     : #141d2e;
+		--bg-card-alt : #111827;
+		--border      : #1e2d45;
+		--border-light: #243450;
+		--text-main   : #e2e8f0;
+		--text-body   : #b8c5d6;
+		--text-muted  : #7a8fa6;
+		--heading     : #9ad0ee;	/* Report headings h2-h5, as in the GUI (--websummary-color_h1) */
+		--text-report : #ffffff;	/* Report text, as in the GUI */
+		--em-report   : #ffff00;	/* Report emphasis (italic Markdown), as in the GUI: yellow, bold, upright */
+		--th-color    : #008b8b;	/* Table headers, as in the GUI (darkcyan) */
+		--cell-border : #606060;	/* Table cell borders, as in the GUI */
+		--row-active  : #154c54;	/* Highlighted row, as in the GUI (tr.ACTIVE) */
+		--cyan        : #00e5ff;
+		--cyan-dim    : #00b8cc;
+		--cyan-subtle : rgba(0, 229, 255, 0.06);
+		--disclaim    : rgba(251, 113, 133, 0.8);
+		--font-mono   : 'JetBrains Mono', ui-monospace, monospace;
+	}
+
+	* { box-sizing: border-box; margin: 0; padding: 0; }
+
+	body {
+		background     : radial-gradient(ellipse at top, #0d1525 0%, var(--bg-primary) 60%);
+		color          : var(--text-main);
+		font-family    : 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+		font-size      : 15px;
+		line-height    : 1.65;
+		padding        : 2.5rem 1rem;
+		display        : flex;
+		justify-content: center;
+		min-height     : 100vh;
+	}
+
+	.container {
+		max-width    : 1024px;
+		width        : 100%;
+		padding      : 0 5px;
+		background   : var(--bg-surface);
+		border       : 1px solid var(--border);
+		border-radius: 12px;
+		box-shadow   : 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(0,229,255,0.04);
+		overflow     : hidden;
+	}
+
+	/* ── Top accent bar ── */
+	.container::before {
+		content   : '';
+		display   : block;
+		height    : 3px;
+		background: linear-gradient(90deg, transparent, var(--cyan), var(--cyan-dim), transparent);
+	}
+
+	/* ── Report sections are layout-transparent ── */
+	section.report { display: contents; }
+
+	/* ── Inner padding (direct children; tables run edge to edge inside their own border) ── */
+	:is(.container, .report) > :not(table) { padding-left: 2.5rem; padding-right: 2.5rem; }
+
+	/* ── Page title ── */
+	.container > h1 {
+		font-size     : 1.9rem;
+		color         : #fff;
+		letter-spacing: -0.02em;
+		padding       : 2rem 2.5rem 1rem;
+		border-bottom : 1px solid var(--border);
+		background    : linear-gradient(180deg, var(--bg-card) 0%, var(--bg-surface) 100%);
+	}
+
+	.title-icon {
+		display       : inline-block;
+		width         : 26px;
+		height        : 26px;
+		color         : var(--cyan);
+		margin-right  : 10px;
+		vertical-align: middle;
+		position      : relative;
+		top           : -3px;
+		filter        : drop-shadow(0 0 6px var(--cyan));
+	}
+
+	/* ── Report meta header ── */
+	.report-meta {
+		border-bottom: 1px solid var(--border);
+		padding      : 0.85rem 2.5rem;
+		font-size    : 0.82rem;
+		color        : var(--text-muted);
+		line-height  : 1.9;
+		font-family  : var(--font-mono);
+	}
+
+	.report-meta strong { color: var(--text-main); font-weight: 500; }
+	.report-meta a { color: var(--cyan); text-decoration: none; }
+	.report-meta a:hover { text-decoration: underline; }
+
+	/* ── Executive summary ── */
+	.executive-summary {
+		border-left  : 3px solid var(--cyan);
+		background   : var(--cyan-subtle);
+		padding      : 1rem 2.5rem;
+		border-radius: 8px;
+		margin       : 1.5rem 0;
+		line-height  : 1.7;
+		box-shadow   : inset 0 0 20px var(--cyan-subtle);
+	}
+
+	.executive-summary strong { color: var(--text-main); }
+
+	/* ── Report headings (as in the GUI: body size, bold, uppercase, light blue, indented 1.5em per level) ── */
+	h3, h4, h5 {
+		font-size     : 0.93rem;
+		font-weight   : 700;
+		color         : var(--heading);
+		text-transform: uppercase;
+		margin        : 1.25rem 0 0.6rem;
+	}
+
+	.report > h3 { padding-left: calc(2.5rem + 1.5em); }	/* Outrank the inner-padding rule by order */
+	.report > h4 { padding-left: calc(2.5rem + 3em); }
+	.report > h5 { padding-left: calc(2.5rem + 4.5em); }
+
+	/* ── Body text ── */
+	p  { font-size: 0.93rem; color: var(--text-body); margin: 0.5rem 0 0.9rem; }
+	li { font-size: 0.93rem; color: var(--text-body); margin: 0.3rem 0; }
+	ul { margin: 0.5rem 0 1rem 1.4rem; }
+
+	strong { color: #e8eef6; font-weight: 600; }
+	em     { color: var(--text-muted); font-size: 0.86rem; }
+
+	/* Report content: as in the GUI */
+	.report :is(p, li) { color: var(--text-report); }
+	.report strong     { color: var(--text-report); font-weight: 700; }
+	.report em         { color: var(--em-report); font-size: inherit; font-style: normal; font-weight: 700; margin: 0 3px; }
+
+	/* ── Tables (as in the GUI: text font, darkcyan headers, grey cell borders; wide tables scroll) ── */
+	.report > table { margin: 1rem 0 1.5rem 3rem; padding: 0; } /* Indented; immune to the inner-padding rule */
+
+	table {
+		display        : block;
+		overflow-x     : auto;
+		border-collapse: collapse;
+		font-size      : 0.86rem;
+		white-space    : nowrap;
+		max-width      : calc(100% - 3rem);
+	}
+
+	th, td {
+		border        : 1px solid var(--cell-border);
+		padding       : 3px 6px;
+		text-align    : left;
+		vertical-align: top;
+		white-space   : nowrap;
+	}
+
+	th { color: var(--th-color); font-weight: 700; }
+	td { color: var(--text-report); }
+
+	tbody tr:hover td { background: var(--row-active); }	/* The GUI highlights a clicked row in this colour */
+
+	/* ── Charts (captured from the GUI; between a report's body and its disclaimer) ── */
+	.report > .charts {
+		display              : grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap                  : 1rem;
+		margin               : 1.5rem 0 0.5rem;
+	}
+
+	.charts figure {
+		background   : #0d1b2e;	/* Matches the charts' own background */
+		border       : 1px solid var(--border);
+		border-radius: 8px;
+		overflow     : hidden;
+	}
+
+	.charts img        { display: block; width: 100%; height: auto; }
+	.charts figcaption { font-size: 0.72rem; color: var(--text-muted); padding: 0.4rem 0.75rem; border-top: 1px solid var(--border); }
+
+	/* ── Disclaimer (always the last paragraph of a report) ── */
+	.report > p:last-child {
+		margin    : 2.5rem -2.5rem 0.9rem;
+		padding   : 1rem 5rem; /* Full-bleed band; text aligned with the content column */
+		border-top: 1px solid var(--border);
+		background: var(--bg-card);
+		font-size : 0.78rem;
+	}
+
+	/* Paragraph-level emphasis (footnotes like '* ETF ...', and the disclaimer): as in the GUI (.InsightRep p > em) */
+	.report p > em {
+		color      : var(--disclaim);
+		font-size  : 10px;
+		line-height: 1.25;
+	}
+	.report p > em > strong { color: inherit !important; }	/* Bold inside a note (e.g. '10%+ Alpha?') keeps the note's colour */
+
+	.report a { color: var(--cyan); text-decoration: none; }
+	.report a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main class='container'>
+<h1>Zoonova AI: Report Archive</h1>
+	<p class='report-meta'><a href='https://insights.zoonova.com/'>Latest report</a></p>
+<section class='report'>
+<h3>November 2026</h3>
+<ul>
+	<li><a href='2026/11/05/pre-market/'>Zoonova AI: Pre-Market Quantitative Briefing – November 5, 2026</a></li>
+</ul>
+</section>
+</main>
+</body>
+</html>
